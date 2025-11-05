@@ -14,35 +14,27 @@
 
 1. Clone the repository:
 
-   bash
-
-   ```
+   ```bash
    git clone https://github.com/YOUR_USERNAME/bverify.git
    cd bverify
    ```
 
 2. Create and activate a virtual environment:
 
-   bash
-
-   ```
+   ```bash
    uv venv
    source .venv/bin/activate
    ```
 
 3. Install the CLI tool:
 
-   bash
-
-   ```
+   ```bash
    uv pip install .
    ```
 
 4. Run the tool:
 
-   bash
-
-   ```
+   ```bash
    bverify '$2b$12$...' 'yourPassword'
    ```
 
@@ -50,34 +42,26 @@
 
 If you want to use `bverify` outside the virtual environment:
 
-bash
-
-```
+```bash
 cp .venv/bin/bverify /usr/local/bin/
 ```
 
 Or use a symlink:
 
-bash
-
-```
+```bash
 ln -s "$(pwd)/.venv/bin/bverify" /usr/local/bin/bverify
 ```
 
 ## Usage
 
-bash
-
-```
+```bash
 bverify <bcrypt_hash> <plaintext_password>
 ```
 
 Example:
 
-bash
-
-```
-bverify '$2y$13$lA3IN99ruaPL22l/ACyYeeYFgI4Pvm3kX7evLD05Dr8pPKeVCJFAi' 'test'
+```bash
+bverify '$2b$12$eW5k7W9vYzZzY2xvZy5jb20uLi5uY2FzZQ9zZ2VjcmV0' 'mySecretPassword'
 ```
 
 Output:
@@ -89,8 +73,6 @@ Output:
 
 ### Project layout
 
-Code
-
 ```
 bverify/
 ├── bverify.py
@@ -100,9 +82,7 @@ bverify/
 
 ### `pyproject.toml`
 
-toml
-
-```
+```toml
 [project]
 name = "bverify"
 version = "0.1.0"

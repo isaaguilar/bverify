@@ -1,0 +1,13 @@
+[project]
+name = "bverify"
+version = "0.1.0"
+description = "CLI tool to verify bcrypt hashes"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "bcrypt>=5.0.0",
+]
+authors = [{ name = "Isa Aguilar" }]
+
+[project.scripts]
+bverify = "bverify:main"

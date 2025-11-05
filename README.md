@@ -77,7 +77,7 @@ Example:
 bash
 
 ```
-bverify '$2b$12$eW5k7W9vYzZzY2xvZy5jb20uLi5uY2FzZQ9zZ2VjcmV0' 'mySecretPassword'
+bverify '$2y$13$lA3IN99ruaPL22l/ACyYeeYFgI4Pvm3kX7evLD05Dr8pPKeVCJFAi' 'test'
 ```
 
 Output:
